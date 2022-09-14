@@ -1,6 +1,14 @@
-// package db
+package db
 
-// func Insert(collection string, data any) error {
+import "context"
 
-// 	return
-// }
+func Insert(collection string, data any) error {
+	client, ctx := getConnection()
+	defer client.Disconnect(ctx)
+
+	c := client.Database("webform").Collection(collection)
+
+	_, err := c.InsertOne(context.Background(), data)
+
+	return err
+}
