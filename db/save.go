@@ -1,5 +1,6 @@
-package db
+// package db
 
-func Insert(collection string, data any) error {
+// func Insert(collection string, data any) error {
 
-}
+// 	return
+// }
