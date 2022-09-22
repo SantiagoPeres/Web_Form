@@ -15,3 +15,5 @@ func main() {
 	}
 
 }
+
+// um teste sobre o que fazer quando esta fazendo algo planejando um script para desenvolver commits com pequenas alterações
